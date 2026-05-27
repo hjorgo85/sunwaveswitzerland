@@ -1,0 +1,267 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="../images/logo.png">
+  <title>TU Dresden DIN EN IEC 60675-3 Test: What the Results Mean | SunWave Switzerland</title>
+  <meta name="description" content="TU Dresden tested the SunWave Ceramica to DIN EN IEC 60675-3 — the international infrared heater standard. We decode every figure: radiation efficiency, peak wavelength 8.52 µm, and what it means for your heating.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <style>
+    .article-hero { padding: 140px 0 80px; background: var(--dark); }
+    .article-hero__inner { max-width: 780px; margin: 0 auto; padding: 0 24px; }
+    .article-hero__tag { display: inline-block; background: rgba(245,197,24,0.12); color: var(--gold); font-size: 0.75rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; padding: 6px 18px; border-radius: 100px; border: 1px solid rgba(245,197,24,0.25); margin-bottom: 20px; text-decoration: none; }
+    .article-hero h1 { font-size: clamp(1.8rem, 4vw, 2.8rem); font-weight: 800; color: #fff; line-height: 1.2; margin-bottom: 20px; }
+    .article-hero__meta { color: rgba(255,255,255,0.5); font-size: 0.88rem; }
+    .article-hero__meta span { margin-right: 20px; }
+    .article-body { background: #fff; padding: 80px 0 120px; }
+    .article-body__inner { max-width: 780px; margin: 0 auto; padding: 0 24px; }
+    .article-body p { font-size: 1rem; color: #333; line-height: 1.8; margin-bottom: 20px; }
+    .article-body h2 { font-size: 1.6rem; font-weight: 800; color: var(--dark); margin: 48px 0 16px; padding-top: 16px; border-top: 2px solid #f0f0f0; }
+    .article-body h3 { font-size: 1.15rem; font-weight: 700; color: var(--dark); margin: 28px 0 12px; }
+    .callout { background: rgba(245,197,24,0.08); border-left: 4px solid var(--gold); border-radius: 0 12px 12px 0; padding: 20px 24px; margin: 28px 0; }
+    .callout p { margin: 0; font-weight: 500; color: #333; }
+    .formula-box { background: var(--dark); border-radius: 12px; padding: 24px 28px; margin: 24px 0; font-family: monospace; color: var(--gold); font-size: 1rem; line-height: 2; }
+    .formula-box .comment { color: rgba(255,255,255,0.4); font-size: 0.85rem; }
+    .result-card { border: 2px solid var(--gold); border-radius: 16px; padding: 28px; margin: 28px 0; }
+    .result-card h4 { font-size: 1rem; font-weight: 700; color: var(--dark); margin-bottom: 16px; }
+    .result-row { display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px solid #f0f0f0; font-size: 0.9rem; }
+    .result-row:last-child { border-bottom: none; }
+    .result-row .k { color: #666; }
+    .result-row .v { font-weight: 700; color: var(--dark); }
+    .result-row .v.gold { color: #a07800; }
+    .result-row .v.green { color: #15803d; }
+    .logo-strip { display: flex; align-items: center; gap: 16px; margin: 20px 0; }
+    .article-cta { background: var(--dark); border-radius: 20px; padding: 48px; text-align: center; margin-top: 60px; }
+    .article-cta h3 { font-size: 1.4rem; font-weight: 800; color: #fff; margin-bottom: 12px; }
+    .article-cta p { color: rgba(255,255,255,0.65); margin-bottom: 28px; }
+    .btn-gold { display: inline-flex; align-items: center; gap: 8px; background: var(--gold); color: var(--dark); font-weight: 700; font-size: 1rem; padding: 14px 32px; border-radius: 8px; text-decoration: none; }
+    .back-link { display: inline-flex; align-items: center; gap: 6px; color: var(--gold); font-size: 0.88rem; font-weight: 600; text-decoration: none; margin-bottom: 32px; }
+  </style>
+</head>
+<body>
+
+<nav class="nav" id="nav">
+  <div class="nav__inner">
+    <a href="../index.html" class="nav__logo">
+      <img src="../images/logo.png" alt="SunWave Switzerland" style="height:44px;display:block;border-radius:6px;">
+    </a>
+    <div class="nav__links">
+      <a href="../product.html">The Panel</a>
+      <a href="../research.html">Research</a>
+      <div class="nav__drop">
+        <button class="nav__drop-btn">For &#9662;</button>
+        <div class="nav__drop-menu" id="nav-drop-menu">
+          <a href="../for-solar.html">Solar Installers</a>
+          <a href="../for-hotels.html">Hotels &amp; Hospitality</a>
+          <a href="../for-homes.html">Swiss Homes</a>
+          <a href="../for-offices.html">Offices &amp; Commercial</a>
+        </div>
+      </div>
+      <a href="../index.html#calculator">Calculator</a>
+      <a href="../blog/index.html">Blog</a>
+      <a href="../contact.html">Contact</a>
+    </div>
+    <div class="nav__right">
+      <a href="../product.html" class="nav__order-btn">Order Now</a>
+      <button class="nav__hamburger" id="nav-hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+  <div class="nav__mobile" id="nav-mobile">
+    <a href="../product.html">The Panel</a>
+    <a href="../research.html">Research</a>
+    <a href="../for-solar.html">Solar Installers</a>
+    <a href="../for-hotels.html">Hotels &amp; Hospitality</a>
+    <a href="../for-homes.html">Swiss Homes</a>
+    <a href="../for-offices.html">Offices &amp; Commercial</a>
+    <a href="../index.html#calculator">Calculator</a>
+    <a href="../blog/index.html">Blog</a>
+    <a href="../contact.html">Contact</a>
+    <a href="../product.html" class="nav__mobile-order">Order Now</a>
+  </div>
+</nav>
+
+<section class="article-hero">
+  <div class="article-hero__inner">
+    <a href="index.html" class="article-hero__tag">← Test Results</a>
+    <h1>TU Dresden's DIN EN IEC 60675-3 Test: What the Numbers Actually Mean</h1>
+    <div class="article-hero__meta">
+      <span>March 2025</span>
+      <span>7 min read</span>
+      <span>Laboratory Testing · Physics</span>
+    </div>
+  </div>
+</section>
+
+<section class="article-body">
+  <div class="article-body__inner">
+    <a href="index.html" class="back-link">← Back to Blog</a>
+
+    <div class="logo-strip">
+      <img src="../images/logo-tu-dresden.png" alt="TU Dresden" style="height:48px;width:auto;object-fit:contain;">
+      <span style="font-size:0.85rem;color:#666;">Technische Universität Dresden — Energy Efficiency Department · October 2022</span>
+    </div>
+
+    <p>Technische Universität Dresden — TU Dresden — is one of Germany's oldest and most respected technical universities, founded in 1828. The Energy Efficiency Department tested the SunWave Ceramica in October 2022 according to <strong>DIN EN IEC 60675-3</strong>, the European and international standard that governs how radiation efficiency is measured and reported for infrared heaters.</p>
+
+    <p>Most infrared panel marketing relies on vague claims about "far infrared" or "healthy wavelengths." The TU Dresden test replaces marketing language with measured data. This article decodes every figure in the report.</p>
+
+    <h2>What is DIN EN IEC 60675-3?</h2>
+
+    <p>IEC 60675 is the International Electrotechnical Commission's standard series for household and similar electrical appliances — specifically for measuring the performance of electric radiant heating panels and associated equipment. Part 3, adopted in Europe as DIN EN IEC 60675-3, applies specifically to infrared heaters and defines:</p>
+
+    <ul style="margin:0 0 20px 24px;line-height:1.9;color:#333;">
+      <li>How radiation efficiency must be measured (test chamber dimensions, measurement points, temperature conditions)</li>
+      <li>How to calculate the ratio of radiated power to total electrical input power</li>
+      <li>How to characterise the spectral emission (the wavelength at which the panel emits)</li>
+      <li>Reporting requirements for compliance claims</li>
+    </ul>
+
+    <p>The standard exists precisely because informal claims about infrared panels are almost impossible to compare. By forcing measurements to a defined protocol, DIN EN IEC 60675-3 allows direct comparison between products and between manufacturer claims and laboratory reality.</p>
+
+    <h2>The Key Results from TU Dresden</h2>
+
+    <div class="result-card">
+      <h4>TU Dresden Test Results — SunWave Ceramica · October 2022</h4>
+      <div class="result-row"><span class="k">Radiation efficiency</span><span class="v gold">Confirmed per DIN EN IEC 60675-3</span></div>
+      <div class="result-row"><span class="k">Peak emission wavelength</span><span class="v gold">8.52 µm (long-wave infrared)</span></div>
+      <div class="result-row"><span class="k">Operating temperature</span><span class="v">~67°C surface temperature</span></div>
+      <div class="result-row"><span class="k">Emission band</span><span class="v">Long-wave infrared (LWIR)</span></div>
+      <div class="result-row"><span class="k">Standard</span><span class="v">DIN EN IEC 60675-3</span></div>
+      <div class="result-row"><span class="k">Institution</span><span class="v">TU Dresden Energy Efficiency Dept.</span></div>
+      <div class="result-row"><span class="k">Result</span><span class="v green">CONFIRMED</span></div>
+    </div>
+
+    <h2>What Does "Peak Wavelength 8.52 µm" Mean?</h2>
+
+    <p>Every warm object emits infrared radiation. The wavelength at which it emits most intensely depends on its temperature — this is described by Wien's Displacement Law:</p>
+
+    <div class="formula-box">
+      λ_peak = b / T<br>
+      <span class="comment">where b = 2,898 µm·K (Wien's displacement constant)</span><br>
+      <span class="comment">and T = absolute temperature in Kelvin</span><br><br>
+      At T = 340 K (67°C):<br>
+      λ_peak = 2,898 / 340 = <strong>8.52 µm</strong>
+    </div>
+
+    <p>The SunWave Ceramica operates at approximately 67°C surface temperature — and at that temperature, Wien's law predicts a peak emission wavelength of exactly 8.52 µm. TU Dresden's measurement confirmed this prediction.</p>
+
+    <h3>Why 8.52 µm matters</h3>
+
+    <p>The infrared spectrum is divided into near-infrared (0.75–1.4 µm), short-wave IR (1.4–3 µm), medium-wave IR (3–8 µm), and long-wave IR (8–15 µm). Human bodies absorb and re-emit IR most efficiently in the 8–14 µm range — sometimes called the "human comfort band."</p>
+
+    <p>At 8.52 µm, the SunWave Ceramica emits squarely in this long-wave band. This means the radiation is directly absorbed by the occupants and building surfaces rather than passing through them (near-IR risk) or heating the air (convective systems). The result is a direct coupling between the panel's output and human thermal perception.</p>
+
+    <div class="callout">
+      <p>Short-wave infrared heaters (quartz tubes, halogen strips) emit at 1–3 µm and can cause discomfort or skin damage at close range. Long-wave ceramic panels at 8.52 µm emit at body temperature analogues — the same band as human skin — and pose no photobiological risk.</p>
+    </div>
+
+    <h2>Understanding Radiation Efficiency</h2>
+
+    <p>Radiation efficiency is the ratio of energy delivered as electromagnetic radiation (infrared) to total electrical input power. The remaining energy is delivered as convection (warm air rising from the panel surface).</p>
+
+    <p>The TU Dresden test, combined with the BSRIA heat transfer ratio analysis, establishes that the SunWave Ceramica delivers 80% of its energy as radiation and 20% as convection — which is why BSRIA concluded it uses up to 80% less energy than A+++ convection heaters. To understand why this ratio matters:</p>
+
+    <ul style="margin:0 0 20px 24px;line-height:1.9;color:#333;">
+      <li><strong>Convective heat</strong> warms air → air rises → heat escapes through ventilation and infiltration</li>
+      <li><strong>Radiant heat</strong> warms surfaces and bodies directly → surfaces re-radiate and retain warmth → less heat lost through ventilation</li>
+    </ul>
+
+    <p>In a modern Swiss building with mandatory controlled ventilation (MINERGIE standard or similar), convective heat is continuously lost through the ventilation system. Radiant heat, by contrast, is absorbed by the building mass and re-radiated over hours — dramatically reducing the continuous energy input required to maintain comfort.</p>
+
+    <h2>How TU Dresden's Test Differs from Marketing Claims</h2>
+
+    <p>Many infrared panel manufacturers claim "90% radiation efficiency" or "far infrared" emission without citing any standard or testing protocol. The difference between a marketing claim and a DIN EN IEC 60675-3 result:</p>
+
+    <ul style="margin:0 0 20px 24px;line-height:1.9;color:#333;">
+      <li><strong>Marketing claim</strong>: measured by the manufacturer in unspecified conditions, unreproducible</li>
+      <li><strong>DIN EN IEC 60675-3</strong>: standardised test chamber, defined measurement positions, independent accredited laboratory, reproducible protocol</li>
+    </ul>
+
+    <p>The TU Dresden result is the only way to make a verifiable comparison between the SunWave Ceramica and competing products — and it is the basis on which architects, energy consultants, and procurement teams should evaluate infrared heating claims.</p>
+
+    <h2>The Connection to the 66% Energy Saving</h2>
+
+    <p>TU Dresden's radiation efficiency confirmation and peak wavelength measurement provide the physical mechanism that explains the independent academic research finding (66% less energy than gas). The chain of reasoning:</p>
+
+    <ol style="margin:0 0 20px 28px;line-height:1.9;color:#333;">
+      <li>80% radiation fraction (BSRIA heat transfer ratio) means most energy goes to surfaces, not air — resulting in up to 80% less consumption vs A+++ convection heaters</li>
+      <li>8.52 µm peak (TU Dresden) means optimal coupling to human thermal comfort receptors</li>
+      <li>Lower air temperature required for equivalent perceived warmth (Mean Radiant Temperature effect)</li>
+      <li>Lower air temperature → less heat loss through ventilation and fabric → less energy input required</li>
+      <li>Result: 71.21 kWh/m²·yr vs 212 kWh/m²·yr for gas (independent academic research — infrared technology) → 66% saving</li>
+    </ol>
+
+    <p>The TU Dresden test is not a standalone finding — it is one piece of a complete, independently verified scientific account of why ceramic infrared heating saves energy.</p>
+
+    <div class="article-cta">
+      <h3>Read All Five Independent Test Reports</h3>
+      <p>BSRIA · TU Dresden · Fraunhofer WKI · Labor S.A. — full details of every study.</p>
+      <a href="../research.html" class="btn-gold">View Research Page</a>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer__grid">
+      <div class="footer__brand">
+        <div class="footer__logo" style="display:flex;align-items:center;gap:8px">
+          <img src="../images/logo.png" alt="SunWave Switzerland" style="height:36px;display:block;border-radius:4px;">
+        </div>
+        <p class="footer__tagline">Swiss distributor of SunWave Ceramica ceramic infrared heating panels. MuKEn-compliant. BSRIA-tested. Fraunhofer-certified.<br>Delivering to all Swiss cantons.</p>
+        <div class="footer__contact">
+          <a href="mailto:info@sunwaveswitzerland.com">info@sunwaveswitzerland.com</a><br>
+          <a href="tel:+41000000000">+41 (0)00 000 00 00</a>
+        </div>
+      </div>
+      <div class="footer__col">
+        <h4>Product</h4>
+        <ul>
+          <li><a href="../product.html">IR-PHP-D1 Panel</a></li>
+          <li><a href="../product.html#order">Order Now</a></li>
+          <li><a href="../index.html#calculator">Savings Calculator</a></li>
+          <li><a href="../contact.html">Get a Quote</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4>Research</h4>
+        <ul>
+          <li><a href="../research.html">All Test Reports</a></li>
+          <li><a href="../research.html#bsria">BSRIA Report</a></li>
+          <li><a href="../research.html#certifications">Certifications</a></li>
+          <li><a href="index.html">Blog</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4>For</h4>
+        <ul>
+          <li><a href="../for-solar.html">Solar Installers</a></li>
+          <li><a href="../for-hotels.html">Hotels</a></li>
+          <li><a href="../for-homes.html">Swiss Homes</a></li>
+          <li><a href="../for-offices.html">Offices</a></li>
+          <li><a href="../contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div>&copy; 2026 SunWave Switzerland &mdash; sunwaveswitzerland.com</div>
+      <div class="footer__certs">
+        <span class="footer__cert-tag">CE</span>
+        <span class="footer__cert-tag">ISO 9001</span>
+        <span class="footer__cert-tag">BSRIA Tested</span>
+        <span class="footer__cert-tag">Fraunhofer WKI</span>
+        <span class="footer__cert-tag">MuKEn Ready</span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="../js/main.js"></script>
+</body>
+</html>
